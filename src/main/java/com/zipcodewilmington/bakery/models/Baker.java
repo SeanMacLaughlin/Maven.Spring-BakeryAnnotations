@@ -1,11 +1,10 @@
 package com.zipcodewilmington.bakery.models;
 
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
@@ -13,11 +12,8 @@ public class Baker {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String name;
-
     private String employeeId;
-
     private String specialty;
 
     public Baker() {
